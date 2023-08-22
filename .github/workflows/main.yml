@@ -18,10 +18,15 @@ on:
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
+    permissions:  
+      issues: write
+      pull-requests: write
     name: A job to say hello
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Hello world action step
         id: hello
-        uses: itsparser/covreport@main
+        uses: itsparser/covreport@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
