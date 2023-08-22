@@ -1,6 +1,9 @@
 matchers:
+  common:
+    - any: ['common/**']
   user:
-    - any: ['**']
+    - any: ['!common/**', '**']
 
 commands:
-  user: ""
+  common: "[common] Command from Exec"
+  user: "[User] Command from Exec"
