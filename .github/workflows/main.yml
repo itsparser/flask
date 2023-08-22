@@ -1,4 +1,8 @@
-on: 
+
+name: "Github Action"
+on:
+  pull_request_target:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
