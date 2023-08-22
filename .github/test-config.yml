@@ -1,0 +1,6 @@
+matchers:
+  user:
+    - any: ['**']
+
+commands:
+  user: ""
