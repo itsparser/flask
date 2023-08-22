@@ -28,3 +28,5 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: itsparser/covreport@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
