@@ -2,6 +2,7 @@
 
 Flask-Starter is a boilerplate starter template designed to help you quickstart your Flask web application development. It has all the ready-to-use bare minimum essentials.
 
+
 ## Features
 
 - Flask 2.0, Python (`PEP8`)
